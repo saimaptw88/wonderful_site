@@ -1,0 +1,711 @@
+body{
+  background-image: url("https://wonderful-wife.net/wp-content/themes/agent_tcd033/img/w_code/head_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 68%;
+  background-color: black;
+  margin: 0;
+}
+
+@media screen and (min-width: 1200px){
+  .w_head{
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+
+    background-color: white;
+    opacity: 90%;
+
+    position: fixed;
+    vertical-align: middle;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #navArea{
+      display: none;
+    }
+
+
+    // タイトル「ワンダフルワイフ」
+    h2{
+      position: absolute;
+      left: 30px;
+      display: inline-block;
+      height: auto;
+      vertical-align: middle;
+    }
+    h2:hover{
+      opacity: 50%;
+    }
+
+    .pc_area{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+        // メニュー一覧
+      ul {
+        list-style: none;
+
+        li{
+          float: left;
+          border: solid 4p white;
+          padding: 1em 1em;
+        }
+      }
+
+      // お問い合わせはこちらボタン
+      .contact{
+        color: white;
+        text-align: center;
+        display: block;
+        border: solid;
+
+
+        a{
+          background-color: orange;
+          padding: 1em 1em;
+          color: white;
+          text-decoration: none;
+
+
+
+          margin-bottom: 5px;
+
+          text-align: center;
+        }
+        a:hover{
+          background-color: gray;
+        }
+      }
+    }
+  }
+
+  .w_body{
+    position: relative;
+    top: 100px;
+
+    margin: 0 auto 2em;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .Wonderful-code-add{
+      display: none;
+    }
+
+    .Wonderful-code{
+      // 中央ボックス
+      max-width: 700px;
+      width: 100%;
+      color: #131d34;
+      font-size: 16px;
+      background-color: white;
+      border: solid 6px black;
+      border-radius: 20px;
+
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 auto 2em;
+
+      top: 20px;
+
+      background-color:white;
+      text-align: center;
+
+      h1{
+        // タイトル：wonderful code
+        font-family: inherit;
+        font-size: 40px;
+        border: solid 0px;
+        margin-top: 10;
+        margin-bottom: 0;
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+
+      }
+
+      p{
+        // 小文字ワンダフルコード
+        font-size: 12px;
+        border: solid 0px;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
+
+      .table{
+        border: solid 0px;
+        margin-bottom: 20px;
+
+        div, .table{
+          font-size: 22px;
+          width: 500px;
+
+          border: solid 1px white;
+          margin: 0 auto;
+          margin-bottom: 10px;
+
+
+        }
+        .bold{
+          width: 400px;
+
+          font-size: 24px;
+          font-weight: bold;
+          background: linear-gradient(transparent 60%, yellow 50%);
+        }
+      }
+
+      a{
+        color: white;
+        text-decoration: none;
+      }
+
+
+      .botten{
+        // 申し込みボタン
+        max-width: 560px;
+        width: 94%;
+        padding: 1em 1em;
+
+        color: white;
+        background-color:#009bcf;
+
+        display: block;
+        border: solid 0px;
+        border-radius: 4px;
+        margin: 0 auto;
+        margin-bottom: 5px;
+      }
+      .botten:hover{
+        background-color: #009bcf;
+        opacity: 80%;
+      }
+    }
+
+    .appeal{
+      border: solid 0px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin-top: 10px;
+
+
+      .table{
+        width: 1000px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+
+        div{
+          width: 250px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 0 10px;
+
+          p{
+            font-size: 16px;
+            text-align: center;
+            color: white;
+            margin: 0 auto;
+          }
+          img{
+            width: 250px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+
+  .w_foot{
+    padding-top: 100px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h2{
+      margin: 0 auto;
+      padding: 0 200px 0 200px;
+      border-bottom: solid 1px;
+    }
+
+    div{
+      margin: 0 auto;
+      width: 600px;
+    }
+
+  }
+}
+
+
+@media screen and (max-width:1199px) and (min-width: 1000px){
+  .w_head{
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+
+    background-color: white;
+    opacity: 90%;
+
+    position: fixed;
+    vertical-align: middle;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    // ハンバーガーメニューボタン
+    .toggle_btn{
+      z-index: 2;
+      position: fixed;
+      right: 30px;
+
+
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      div{
+        display: block;
+        margin: 2px;
+
+        width: 20px;
+        height: 2px;
+        background-color: #333;
+        border-radius: 4px;
+      }
+    }
+
+    .toggle_btn:hover{
+      background-color: rgb(216, 213, 213);
+    }
+
+
+    h2{
+      position: absolute;
+      left: 30px;
+    }
+
+    .pc_area{
+      display: none;
+    }
+
+  }
+
+  .w_body{
+    position: relative;
+    top: 100px;
+
+    margin: 0 auto 2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .Wonderful-code-add{
+      display: none;
+    }
+
+    .Wonderful-code{
+      // 中央ボックス
+      max-width: 700px;
+      width: 100%;
+      color: #131d34;
+      font-size: 16px;
+      background-color: white;
+      border: solid 6px black;
+      border-radius: 20px;
+
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 auto 2em;
+
+      top: 20px;
+
+      background-color:white;
+      text-align: center;
+
+      h1{
+        // タイトル：wonderful code
+        font-family: inherit;
+        font-size: 40px;
+        border: solid 0px;
+        margin-top: 10;
+        margin-bottom: 0;
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+
+      }
+
+      p{
+        // 小文字ワンダフルコード
+        font-size: 12px;
+        border: solid 0px;
+        padding: 0;
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
+
+      .table{
+        border: solid 0px;
+        margin-bottom: 20px;
+
+        div, .table{
+          font-size: 22px;
+          width: 500px;
+
+          border: solid 1px white;
+          margin: 0 auto;
+          margin-bottom: 10px;
+
+
+        }
+        .bold{
+          width: 400px;
+
+          font-size: 24px;
+          font-weight: bold;
+          background: linear-gradient(transparent 60%, yellow 50%);
+        }
+      }
+
+      a{
+        color: white;
+        text-decoration: none;
+      }
+
+
+      .botten{
+        // 申し込みボタン
+        max-width: 560px;
+        width: 94%;
+        padding: 1em 1em;
+
+        color: white;
+        background-color:#009bcf;
+
+        display: block;
+        border: solid 0px;
+        border-radius: 4px;
+        margin: 0 auto;
+        margin-bottom: 5px;
+      }
+      .botten:hover{
+        background-color: #009bcf;
+        opacity: 80%;
+      }
+    }
+
+    .appeal{
+      border: solid 0px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin-top: 10px;
+
+
+      .table{
+        width: 1000px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+
+        div{
+          width: 250px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 0 10px;
+
+          p{
+            font-size: 16px;
+            text-align: center;
+            color: white;
+            margin: 0 auto;
+          }
+          img{
+            width: 250px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+
+  .w_foot{
+    padding-top: 100px;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h2{
+      margin: 0 auto;
+      padding: 0 200px 0 200px;
+      border-bottom: solid 1px;
+    }
+
+    div{
+      margin: 0 auto;
+      width: 600px;
+    }
+
+  }
+}
+
+
+
+
+@media screen and (max-width: 999px){
+  .w_head{
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+
+    background-color: white;
+    opacity: 90%;
+
+    position: fixed;
+    vertical-align: middle;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    // ハンバーガーメニューボタン
+    .toggle_btn{
+      z-index: 2;
+      position: fixed;
+      right: 30px;
+
+
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      div{
+        display: block;
+        margin: 2px;
+
+        width: 20px;
+        height: 2px;
+        background-color: #333;
+        border-radius: 4px;
+      }
+    }
+
+    .toggle_btn:hover{
+      background-color: rgb(216, 213, 213);
+    }
+
+
+    h2{
+      position: absolute;
+      left: 30px;
+    }
+
+    .pc_area{
+      display: none;
+    }
+
+  }
+  .w_body{
+    position: relative;
+    top: 100px;
+
+    margin: 0 auto 2em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .Wonderful-code{
+      display: none;
+    }
+
+    .Wonderful-code-add{
+      // 中央ボックス
+      max-width: 500px;
+      width: 100%;
+      height: 500px;
+      color: #131d34;
+      font-size: 16px;
+      background-color: white;
+      border: solid 6px black;
+      border-radius: 20px;
+
+      display: flex;
+      // justify-content: space-around;
+      flex-direction: column;
+      margin: 0 auto 2em;
+      padding: 0;
+
+      top: 20px;
+
+      background-color:white;
+      text-align: center;
+      position: relative;
+
+      .title{
+        margin: 20px;
+        h1{
+          // タイトル：wonderful code
+          font-family: inherit;
+          font-size: 40px;
+          margin: 0 auto;
+
+        }
+
+        p{
+          // 小文字ワンダフルコード
+          font-size: 20px;
+          border: solid 0px;
+          padding: 0;
+          margin-top: 0;
+          margin-bottom: 15px;
+        }
+      }
+
+
+
+      .table{
+        border: solid 0px;
+        margin: 10px;
+
+        div{
+          font-size: 22px;
+          width: 500px;
+
+          border: solid 0px;
+          margin: 0 auto;
+          margin-bottom: 10px;
+
+
+        }
+        .bold{
+          width: 400px;
+
+          font-size: 24px;
+          font-weight: bold;
+          background: linear-gradient(transparent 60%, yellow 50%);
+        }
+      }
+
+      .note{
+        margin: 20px 10px 10px 10px;
+        .botten{
+          a{
+            color: white;
+            text-decoration: none;
+          }
+
+          // 申し込みボタン
+          max-width: 360px;
+          width: 94%;
+          padding: 1em 1em;
+
+          color: white;
+          background-color:#009bcf;
+
+          display: block;
+          border: solid 0px;
+          border-radius: 4px;
+          margin: 0 auto;
+          margin-bottom: 5px;
+        }
+        .botten:hover{
+          background-color: #009bcf;
+          opacity: 80%;
+        }
+
+        p{
+          // 注意書き
+          font-size: 15px;
+        }
+      }
+
+    }
+
+    .appeal{
+      border: solid 0px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin-top: 10px;
+
+
+      .table{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+
+
+        div{
+          width: 320px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 0 10px;
+
+          p{
+            font-size: 40px;
+            text-align: center;
+            color: white;
+            margin: 0 auto;
+          }
+          img{
+            width: 320px;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+
+  .w_foot{
+    width: 80%;
+    padding-top: 150px;
+    margin: 0 auto;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h2{
+      width: 100%;
+      margin: 0 auto;
+      border-bottom: solid 1px;
+    }
+  }
+}
